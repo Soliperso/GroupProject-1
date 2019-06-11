@@ -1,10 +1,3 @@
-// jQuery for carousel
-$(document).ready(function() {
-    $('.carousel').carousel();
-});
-
-
-
 // // MusixMatch
 // // Endpoint: [https://musixmatchcom-musixmatch.p.rapidapi.com/wsr/1.1/](https://musixmatchcom-musixmatch.p.rapidapi.com/wsr/1.1/)  (need to add exact endpoint for lyrics search)
 // // API Key: 1c9baf23b0d366711ac0096634f7b3e6
