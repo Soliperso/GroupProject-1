@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -13,99 +14,106 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Javascript -->
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
 </head>
 
 <body>
     <!-- Banner -->
     <!-- Banner Script -->
+    <header>
+        <script>
+            $(document).ready(function() {
+                $('.carousel').carousel();
 
-    <script>
-        $(document).ready(function() {
-            $('.carousel').carousel();
+            });
+        </script>
 
-        });
-    </script>
-
-    <div class="carousel">
-        <a class="carousel-item" href="#one!"><img src="./assets/images/CamiloCela1989.jpg"></a>
-        <a class="carousel-item" href="#two!"><img src="./assets/images/CarlosBelo96.jpg"></a>
-        <a class="carousel-item" href="#three!"><img src="./assets/images/DaliLama14_1989.jpg"></a>
-        <a class="carousel-item" href="#four!"><img src="./assets/images/JodyWilliams97.jpg"></a>
-        <a class="carousel-item" href="#five!"><img src="./assets/images/JosephRatbalt95.jpg"></a>
-        <a class="carousel-item" href="#six!"><img src="./assets/images/Mikhail.Gorbachev.jpg"></a>
-        <a class="carousel-item" href="#seven!"><img src="./assets/images/RichardErnst91.jpg"></a>
-        <a class="carousel-item" href="#eight!"><img src="./assets/images/RudolphMarcus92.jpg"></a>
-        <a class="carousel-item" href="#nine!"><img src="./assets/images/YaserArafat94.jpg"></a>
-    </div>
-    <div>
-        <!-- Header -->
-        <h1 class="center-align">Nobel Prize Winners</h1>
-    </div>
-    <container>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="./assets/images/CamiloCela1989.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="./assets/images/CarlosBelo96.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="./assets/images/DaliLama14_1989.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="./assets/images/JodyWilliams97.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="./assets/images/JosephRatbalt95.jpg"></a>
+            <a class="carousel-item" href="#six!"><img src="./assets/images/Mikhail.Gorbachev.jpg"></a>
+            <a class="carousel-item" href="#seven!"><img src="./assets/images/RichardErnst91.jpg"></a>
+            <a class="carousel-item" href="#eight!"><img src="./assets/images/RudolphMarcus92.jpg"></a>
+            <a class="carousel-item" href="#nine!"><img src="./assets/images/YaserArafat94.jpg"></a>
+        </div>
         <div>
-            <!-- Left Aside (contains ) -->
-            <section class="section container" id="form-aside">
-                <div class="row">
-                    <div class="col m6">
-                        <h2 class="how-to-title">How to use this app</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias unde facere a maiores omnis quos corporis sunt eaque maxime sapiente reiciendis neque id repellat atque, officia exercitationem asperiores sequi?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odio aut adipisci illo velit repellat perferendis eaque voluptatum, officiis numquam molestiae, non voluptates sed fugiat dignissimos doloribus provident! Optio,
-                            temporibus?
-                        </p>
-                    </div>
-                    <div class="col m5 offset-1">
+            <!-- Header -->
+            <h1 class="center-align">Nobel Prize Winners</h1>
+        </div>
+    </header>
+    <main>
+        <container>
+            <div>
+                <!-- Left Aside (contains ) -->
+                <section class="section container" id="form-aside">
+                    <div class="row">
+                        <div class="col m6">
+                            <h2 class="how-to-title">How to use this app</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias unde facere a maiores omnis quos corporis sunt eaque maxime sapiente reiciendis neque id repellat atque, officia exercitationem asperiores sequi?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odio aut adipisci illo velit repellat perferendis eaque voluptatum, officiis numquam molestiae, non voluptates sed fugiat dignissimos doloribus provident! Optio,
+                                temporibus?
+                            </p>
+                        </div>
+                        <div class="col m5 offset-1">
 
-                        <!-- Form begins -->
-                        <h2 class="form-title">Search laureates</h2>
-                        <div class="row">
-                            <div class="col s12">
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <i class="material-icons prefix">person</i>
-                                        <input type="text" id="autocomplete-input" class="autocomplete">
-                                        <label for="autocomplete-input">Enter Name</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <i class="material-icons prefix">lightbulb_outline</i>
-                                        <input type="text" id="autocomplete-input" class="autocomplete">
-                                        <label for="autocomplete-input">Enter Field</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <i class="material-icons prefix">date_range</i>
-                                        <input type="text" id="autocomplete-input" class="autocomplete">
-                                        <label for="autocomplete-input">Year Awarded</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <i class="material-icons prefix">flag</i>
-                                        <input type="text" id="autocomplete-input" class="autocomplete">
-                                        <label for="autocomplete-input">Country of origin</label>
+                            <!-- Form begins -->
+                            <h2 class="form-title">Search laureates</h2>
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <i class="material-icons prefix">person</i>
+                                            <input type="text">
+                                            <label for="autocomplete-input">Enter Name</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <i class="material-icons prefix">lightbulb_outline</i>
+                                            <input type="text">
+                                            <label for="autocomplete-input">Enter Field</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <i class="material-icons prefix">date_range</i>
+                                            <input type="text">
+                                            <label for="autocomplete-input">Year Awarded</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <i class="material-icons prefix">flag</i>
+                                            <input type="text">
+                                            <label for="autocomplete-input">Country of origin</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Form ends -->
-                        <!-- Dropdown starts -->
+                            <!-- Form ends -->
+                            <!-- Dropdown starts -->
 
-                        <div class="search-button">
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <div class="search-button">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                                         <i class="material-icons right">search</i>
                                       </button>
+                            </div>
+
+                            <!-- Dropdown Ends -->
                         </div>
+                        <!-- Right Aside (Search) -->
+                </section>
 
-                        <!-- Dropdown Ends -->
-                    </div>
-                    <!-- Right Aside (Search) -->
-            </section>
-
-            </div>
-            <section class="section-container" id="about-aside">
+                </div>
+                <section class="section-container" id="about-aside">
 
 
-            </section>
-    </container>
-    <footer class="page-footer red lighten-1">
-        <div class="footer-copyright red lighten-1">
+                </section>
+        </container>
+    </main>
+    <footer class="page-footer teal lighten-2">
+        <div class="footer-copyright teal lighten-2">
             <div class="center-align container">
                 © 2019 UC Berkeley Extension Bootcamp
             </div>
