@@ -30,9 +30,17 @@
     <header>
         <script>
             $(document).ready(function() {
-                $('.carousel').carousel();
+                $('.carousel').carousel({
+                    padding: 300
+                });
 
             });
+
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 2000);
+            }
+            setTimeout(autoplay, 2000);
         </script>
 
         <div class="carousel">
