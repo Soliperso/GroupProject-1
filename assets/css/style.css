@@ -5,8 +5,17 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background-color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 main {
     flex: 1 0 auto;
+}
+
+.section-title {
+    color: teal;
+}
+
+h1 {
+    color: teal;
 }
