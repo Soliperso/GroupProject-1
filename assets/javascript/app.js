@@ -1,7 +1,6 @@
-
 $('#submitBtn').on('click', function(event) {
     event.preventDefault();
-    
+
     // Capture the form data
     let year = $('#year').val().trim();
     let yearTo = $('#yearTo').val().trim();
@@ -16,15 +15,14 @@ $('#submitBtn').on('click', function(event) {
         method: 'GET'
     }).then(function(response) {
         console.log(response.prizes);
-        for(let i = 0; i < response.prizes.length; i++) {
+        for (let i = 0; i < response.prizes.length; i++) {
             let category = 'Category: ' + response.prizes[i].category;
             for (let j = 0; j < response.prizes[i].laureates.length; j++) {
                 let firstName = response.prizes[i].laureates[j].firstname;
                 let surname = response.prizes[i].laureates[j].surname;
                 let motivation = response.prizes[i].laureates[j].motivation;
                 let numberOfLaureates = 'Number of Laureates: ' + response.prizes[i].laureates[j].share;
-                
-    
+
                 let divContainer = $('<div>').attr('class', 'persInfo');
                 let h5first = $('<h5>').text(`First Name: ${firstName}`);
                 let h5Surname = $('<h5>').text(`Surname: ${surname}`);
@@ -35,14 +33,14 @@ $('#submitBtn').on('click', function(event) {
                 divContainer.append(h5Surname);
                 divContainer.append(pMotivation);
                 divContainer.append(pNumberOfLaureates);
-                
+
                 console.log($('#category-div').append(divContainer));
-                
+
                 trans(motivation)
             }
         }
     });
-    
+
 });
 
 
@@ -59,7 +57,6 @@ function trans(motivation) {
         let pTrans = $('<div>').attr('class', 'textTraslated');
         para.append(pTrans);
         let pText = $('<p>').text(response.text)
-        para.append(pText);       
+        para.append(pText);
     });
 }
-
