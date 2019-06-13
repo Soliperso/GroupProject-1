@@ -1,41 +1,65 @@
-// // MusixMatch
-// // Endpoint: [https://musixmatchcom-musixmatch.p.rapidapi.com/wsr/1.1/](https://musixmatchcom-musixmatch.p.rapidapi.com/wsr/1.1/)  (need to add exact endpoint for lyrics search)
-// // API Key: 1c9baf23b0d366711ac0096634f7b3e6
-// // Documentation: [https://developer.musixmatch.com/documentation](https://developer.musixmatch.com/documentation)
-// // Search for a string among lyrics: q_lyrics
+
+$('#submitBtn').on('click', function(event) {
+    event.preventDefault();
+    
+    // Capture the form data
+    let year = $('#year').val().trim();
+    let yearTo = $('#yearTo').val().trim();
+    let category = $('#category').val().trim();
+    let numberOfLaureates = $('#numberOfLaureates').val().trim();
 
 
-// var userInput = "";
+    // Nobel Prize URL
+    let queryURL = `http://api.nobelprize.org/v1/prize.json?year=${year}&yearTo=${yearTo}&category=${category}&numberOfLaureates=${numberOfLaureates}`;
+    $.ajax({
+        url: queryURL,
+        method: 'GET'
+    }).then(function(response) {
+        console.log(response.prizes);
+        for(let i = 0; i < response.prizes.length; i++) {
+            let category = 'Category: ' + response.prizes[i].category;
+            for (let j = 0; j < response.prizes[i].laureates.length; j++) {
+                let firstName = response.prizes[i].laureates[j].firstname;
+                let surname = response.prizes[i].laureates[j].surname;
+                let motivation = response.prizes[i].laureates[j].motivation;
+                let numberOfLaureates = 'Number of Laureates: ' + response.prizes[i].laureates[j].share;
+                
+    
+                let divContainer = $('<div>').attr('class', 'persInfo');
+                let h5first = $('<h5>').text(`First Name: ${firstName}`);
+                let h5Surname = $('<h5>').text(`Surname: ${surname}`);
+                let pMotivation = $('<p>').text(`Motivation: ${motivation}`);
+                let pNumberOfLaureates = $('<p>').text(`Number of Laureates: ${numberOfLaureates}`);
 
-// var musixMatchAPI_KEY = "1c9baf23b0d366711ac0096634f7b3e6";
+                divContainer.append(h5first);
+                divContainer.append(h5Surname);
+                divContainer.append(pMotivation);
+                divContainer.append(pNumberOfLaureates);
+                
+                console.log($('#category-div').append(divContainer));
+                
+                trans(motivation)
+            }
+        }
+    });
+    
+});
 
-// $.ajax({
-//     url: "https://musixmatchcom-musixmatch.p.rapidapi.com/wsr/1.1/?q=" + userInput + "?apikey=" + musixMatchAPI_KEY,
-//     method: "GET"
-// }).then(function(response) {
-//     console.log(response);
-// });
 
-// // YouTube
-// // Endpoint: [https://www.youtube.com/iframe_api](https://www.youtube.com/iframe_api)
-// // API Key: AIzaSyARIAx0ZVpwc63Bv3dptmWymN5DmCMOYG0
-// // Documentation: [https://developers.google.com/youtube/v3/docs/](https://developers.google.com/youtube/v3/docs/)
+// translator
+function trans(motivation) {
+    $('#para').text(motivation);
+    let queryURL = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190611T014436Z.15adeca0a3de4446.460dd96ea222fa02e8e812ef75e3e76a15a3a4ed&text=${motivation}&lang=fr&format=plain&options=1`;
 
-// // var youTubeAPI_KEY = "AIzaSyARIAx0ZVpwc63Bv3dptmWymN5DmCMOYG0";
+    $.ajax({
+        url: queryURL,
+        method: 'GET'
+    }).then(function(response) {
+        let para = $('#para');
+        let pTrans = $('<div>').attr('class', 'textTraslated');
+        para.append(pTrans);
+        let pText = $('<p>').text(response.text)
+        para.append(pText);       
+    });
+}
 
-// // $.ajax({
-// //     type: "GET",
-// //     url: "https://www.youtube.com/iframe_api"
-// // });
-
-// // NFLArrest
-// // Endpoint: [http://nflarrest.com/api/v1/](http://nflarrest.com/api/v1/)
-// // API Key: a81d696ff0msh9be012b0b7f7f37p1ddc64jsn4a73ad761f23 (from Rapid-API)
-// // Documentation: [http://nflarrest.com/api/](http://nflarrest.com/api/)
-
-// var nflArrestAPI_KEY = "a81d696ff0msh9be012b0b7f7f37p1ddc64jsn4a73ad761f23";
-
-// $.ajax({
-//     type: "GET",
-//     url: "http://nflarrest.com/api/v1/..." // Elipses to signify incomplete link. Not sure which exact endpoint to use.
-// });
