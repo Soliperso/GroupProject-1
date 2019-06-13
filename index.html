@@ -2,7 +2,8 @@
 <html>
 
 <head>
-
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -82,43 +83,38 @@
                             <div class="row">
                                 <div class="col s12">
                                     <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">person</i>
-                                            <input type="text">
-                                            <label for="autocomplete-input">Enter Name</label>
-                                        </div>
+                                        
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix">lightbulb_outline</i>
                                             <input type="text">
-                                            <label for="autocomplete-input">Enter Field</label>
+                                            <label for="year">Enter start year</label>
                                         </div>
+                                        
+                                        
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix">date_range</i>
                                             <input type="text">
-                                            <label for="autocomplete-input">Year Awarded</label>
+                                            <label for="yearTo">Enter end year</label>
                                         </div>
                                         <div class="input-field col s12">
-                                            <i class="material-icons prefix">flag</i>
+                                            <i class="material-icons prefix">school</i>
                                             <input type="text">
-                                            <label for="autocomplete-input">Country of origin</label>
+                                            <label for="category">Enter category</label>
+                                        </div>
+                                        
+                                        <div>
+                                        <select id="numberOfLaureates">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Form ends -->
-                            <!-- Dropdown starts -->
-
-                            <div class="search-button">
-                                <button class="btn waves-effect blue waves-light" type="submit" name="action">Submit
-                                        <i class="material-icons right">search</i>
-                                      </button>
-                            </div>
-
-                            <!-- Dropdown Ends -->
-                        </div>
                         <!-- Right Aside (Search) -->
                 </section>
-
                 </div>
                 <section class="section-container" id="about-aside">
 
