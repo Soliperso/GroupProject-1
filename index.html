@@ -21,37 +21,23 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <!-- Javascript -->
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
-
-
 </head>
 
 <body>
     <header>
-        <script>
-            $(document).ready(function() {
-                $('.carousel').carousel({
-                    padding: 300
-                });
-
-            });
-
-            function autoplay() {
-                $('.carousel').carousel('next');
-                setTimeout(autoplay, 2000);
-            }
-            setTimeout(autoplay, 2000);
-        </script>
-        <!-- Carousel -->
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="./assets/images/CamiloCela1989.jpg" alt="Camilo Cela, 1989"></a>
-            <a class="carousel-item" href="#two!"><img src="./assets/images/CarlosBelo96.jpg" alt="Carlos Belo, 1996></a>
-            <a class="carousel-item" href="#three!"><img src="./assets/images/DaliLama14_1989.jpg" alt="Dali Lama, 1989"></a>
-            <a class="carousel-item" href="#four!"><img src="./assets/images/JodyWilliams97.jpg" alt="Jody Williams, 1997"></a>
-            <a class="carousel-item" href="#five!"><img src="./assets/images/JosephRatbalt95.jpg" alt="Joseph Ratbalt, 1995"></a>
-            <a class="carousel-item" href="#six!"><img src="./assets/images/Mikhail.Gorbachev.jpg" alt="Mikhail Gorbachev, 1990"></a>
-            <a class="carousel-item" href="#seven!"><img src="./assets/images/RichardErnst91.jpg" alt="Richard Ernst, 1991"></a>
-            <a class="carousel-item" href="#eight!"><img src="./assets/images/RudolphMarcus92.jpg" alt="Rudolph Marcus, 1992"></a>
-            <a class="carousel-item" href="#nine!"><img src="./assets/images/YaserArafat94.jpg" alt="Yaser Arafat, 1994"></a>
+        <div>
+            <!-- Carousel -->
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="./assets/images/CamiloCela1989.jpg" alt="Camilo Cela, 1989"></a>
+                <a class="carousel-item" href="#two!"><img src="./assets/images/CarlosBelo96.jpg" alt="Carlos Belo, 1996"></a>
+                <a class="carousel-item" href="#three!"><img src="./assets/images/DaliLama14_1989.jpg" alt="Dali Lama, 1989"></a>
+                <a class="carousel-item" href="#four!"><img src="./assets/images/JodyWilliams97.jpg" alt="Jody Williams, 1997"></a>
+                <a class="carousel-item" href="#five!"><img src="./assets/images/JosephRatbalt95.jpg" alt="Joseph Ratbalt, 1995"></a>
+                <a class="carousel-item" href="#six!"><img src="./assets/images/Mikhail.Gorbachev.jpg" alt="Mikhail Gorbachev, 1990"></a>
+                <a class="carousel-item" href="#seven!"><img src="./assets/images/RichardErnst91.jpg" alt="Richard Ernst, 1991"></a>
+                <a class="carousel-item" href="#eight!"><img src="./assets/images/RudolphMarcus92.jpg" alt="Rudolph Marcus, 1992"></a>
+                <a class="carousel-item" href="#nine!"><img src="./assets/images/YaserArafat94.jpg" alt="Yaser Arafat, 1994"></a>
+            </div>
         </div>
         <!-- Header -->
         <div>
@@ -99,8 +85,6 @@
                                             <input type="text">
                                             <label for="category">Enter category</label>
                                         </div>
-
-
                                     </div>
                                 </div>
 
@@ -116,7 +100,7 @@
                                     <option value="3">3</option>
                                 </select>
                             </div>
-                            <a class="waves-effect waves-light btn text-white"><i class="material-icons left">search</i>button</a>
+                            <a class="waves-effect waves-light btn text-white"><i class="material-icons left">search</i>Search</a>
                 </section>
                 </div>
         </container>
@@ -124,11 +108,26 @@
     <footer class="page-footer teal">
         <div class="footer-copyright teal">
             <div class="center-align container">
-                © 2019 UC Berkeley Extension Bootcamp
+                © 2019
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        });
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                padding: 300
+            });
+        });
 
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 3000);
+        }
+        setTimeout(autoplay, 3000);
+    </script>
 </body>
 
 </html>
