@@ -15,6 +15,11 @@
  .container-fluid {
      background-color: whitesmoke;
  }
+
+ .header-top {
+    margin-top: 15px;
+    text-shadow: 1px 1px 2px #fff;
+ }
  
  main {
      flex: 1 0 auto;
@@ -46,4 +51,44 @@
      height: 200px;
      margin-top: 20px;
      margin-bottom: 20px;
+ }
+
+ .form-header {
+    background-color: teal;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px #000;
+ }
+
+
+ .page-footer {
+     padding-top: 10px;
+ }
+
+ .personInfoDisplay {
+     background-color: rgba(0, 128, 128, .1);
+     margin: 15px;
+ }
+
+ .persInfo {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+ }
+
+ p#para {
+     padding: 20px;
+     margin-top: 20px;
+    background-color: rgba(0, 128, 128, .1);
+ }
+
+ 
+ footer {
+    
+     padding-bottom: 10px;
  }
