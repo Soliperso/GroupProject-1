@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -10,8 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
@@ -31,8 +29,8 @@
     <!-- Banner -->
     <!-- Banner Script -->
     <header>
-        <script>
-            $(document).ready(function () {
+        <!-- <script>
+            $(document).ready(function() {
                 $('.carousel').carousel({
                     padding: 300
                 });
@@ -56,10 +54,22 @@
             <a class="carousel-item" href="#seven!"><img src="./assets/images/RichardErnst91.jpg"></a>
             <a class="carousel-item" href="#eight!"><img src="./assets/images/RudolphMarcus92.jpg"></a>
             <a class="carousel-item" href="#nine!"><img src="./assets/images/YaserArafat94.jpg"></a>
-        </div>
+        </div> -->
+
         <div>
             <!-- Header -->
             <h1 class="center-align">Nobel Prize Winners</h1>
+        </div>
+        <div class="img-container d-flex justify-content-center">
+            <img src="./assets/images/CamiloCela1989.jpg">
+            <img src="./assets/images/CarlosBelo96.jpg">
+            <img src="./assets/images/DaliLama14_1989.jpg">
+            <img src="./assets/images/JodyWilliams97.jpg">
+            <img src="./assets/images/JosephRatbalt95.jpg">
+            <img src="./assets/images/Mikhail.Gorbachev.jpg">
+            <img src="./assets/images/RichardErnst91.jpg">
+            <img src="./assets/images/RudolphMarcus92.jpg">
+            <img src="./assets/images/YaserArafat94.jpg">
         </div>
     </header>
     <main>
@@ -69,59 +79,61 @@
                 <section class="section container" id="form-aside">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h2 class="section-title">How to use this app</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias unde facere a maiores
-                                omnis quos corporis sunt eaque maxime sapiente reiciendis neque id repellat atque,
-                                officia exercitationem asperiores sequi?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odio aut adipisci illo
-                                velit repellat perferendis eaque voluptatum, officiis numquam molestiae, non voluptates
-                                sed fugiat dignissimos doloribus provident! Optio,
-                                temporibus?
+                            <h2 class="section-title">About this app</h2>
+                            <p>
+                                The Nobel Prize is one of the most distinguished endowments a person can be awarded. Laureates represent some of the most astute minds in the world, and their contributions to society are a trademark of their tenacity and steadfastness.
                             </p>
+                            <p>
+                                First awareded in 1901, with nearly 1000 recipients spanning 75 different countries, one could speculate achievements have been nearly as diverse as the number of ethnic origins. The true value this app gleams by facilitating the ability to search for
+                                laureates by date of prize receipt and the field for which it was awarded.
+                            </p>
+                            <p>
+                                To use this app, enter your search criteria into the form on the right. Upon submission, you will be presented with relevant Nobel laureates and their achievements in both English and French.
+                            </P>
                         </div>
                         <!-- <div class="col m5 offset-1"> -->
-                            <!-- Form -->
+                        <!-- Form -->
 
-                            <div class="col-lg-4">
-                                <div class="card form">
-                                    <div class="card-header">
-                                        <h4 class="form-header">Search Terms</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="year">Year</label>
-                                                <input type="text" class="form-control" id="year">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="yearTo">YearTo</label>
-                                                <input type="text" class="form-control" id="yearTo">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="category">Category</label>
-                                                <input type="text" class="form-control" id="category">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="numberOfLaureates">Number of Laureates</label>
-                                                <select class="custom-select" id="numberOfLaureates">
+                        <div class="col-lg-4">
+                            <div class="card form">
+                                <div class="card-header">
+                                    <h4 class="form-header">Search Terms</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="year">Year</label>
+                                            <input type="text" class="form-control" id="year">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="yearTo">YearTo</label>
+                                            <input type="text" class="form-control" id="yearTo">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="category">Category</label>
+                                            <input type="text" class="form-control" id="category">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="numberOfLaureates">Number of Laureates</label>
+                                            <select class="custom-select" id="numberOfLaureates">
                                                     <option selected>Choose...</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                 </select>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    
-                                    <button type="submit" class="btn btn-outline-default btn-md"id="submitBtn">Submit</button>
+                                        </div>
+                                    </form>
                                 </div>
+
+                                <button type="submit" class="btn btn-outline-default btn-md" id="submitBtn">Submit</button>
                             </div>
-                            
-
-
-                            <!-- Dropdown Ends -->
                         </div>
-                        <!-- Right Aside (Search) -->
+
+
+
+                        <!-- Dropdown Ends -->
+                    </div>
+                    <!-- Right Aside (Search) -->
                 </section>
 
             </div>
@@ -137,7 +149,6 @@
             <div class="col-lg-6">
                 <div class="card-body personInfoDisplay">
                     <div id='category-div'></div>
-                    <hr>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -154,7 +165,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

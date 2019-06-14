@@ -1,35 +1,49 @@
  html {
-    font-family: 'Ubuntu', sans-serif;
-    background-color: whitesmoke;
-}
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: whitesmoke;
-}
-
-/* main {
-    flex: 1 0 auto;
-}
-
-.section-title {
-    color: teal;
-}
-
-h1 {
-    color: teal;
-    background-color: whitesmoke;
-}
-
-.results,
-#results-h1,
-.results-img {
-    margin-left: 40px;
-}
-
-.back-button {
-    margin-top: 40px;
-    margin-left: 40px;
-} */
+     font-family: 'Ubuntu', sans-serif;
+     background-color: whitesmoke;
+ }
+ 
+ body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+     background-color: whitesmoke;
+ }
+ 
+ header,
+ .col-lg-6,
+ .container-fluid {
+     background-color: whitesmoke;
+ }
+ 
+ main {
+     flex: 1 0 auto;
+     background-color: whitesmoke;
+ }
+ 
+ .section-title {
+     color: teal;
+ }
+ 
+ h1 {
+     margin-top: 20px;
+     color: teal;
+     background-color: whitesmoke;
+ }
+ 
+ .results,
+ #results-h1,
+ .results-img {
+     margin-left: 40px;
+ }
+ 
+ .back-button {
+     margin-top: 40px;
+     margin-left: 40px;
+ }
+ 
+ img {
+     height: 200px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
