@@ -27,7 +27,7 @@ $('#submitBtn').on('click', function(event) {
                 let h5first = $('<h5>').text(`First Name: ${firstName}`);
                 let h5Surname = $('<h5>').text(`Surname: ${surname}`);
                 let pMotivation = $('<p>').text(`Motivation: ${motivation}`);
-                let pNumberOfLaureates = $('<p>').text(`Number of Laureates: ${numberOfLaureates}`);
+                let pNumberOfLaureates = $('<p>').text(`${numberOfLaureates}`);
 
                 divContainer.append(h5first);
                 divContainer.append(h5Surname);
