@@ -14,7 +14,6 @@ $('#submitBtn').on('click', function(event) {
         url: queryURL,
         method: 'GET'
     }).then(function(response) {
-        console.log(response.prizes);
         for (let i = 0; i < response.prizes.length; i++) {
             let category = 'Category: ' + response.prizes[i].category;
             for (let j = 0; j < response.prizes[i].laureates.length; j++) {
@@ -33,8 +32,6 @@ $('#submitBtn').on('click', function(event) {
                 divContainer.append(h5Surname);
                 divContainer.append(pMotivation);
                 divContainer.append(pNumberOfLaureates);
-
-                console.log($('#category-div').append(divContainer));
 
                 trans(motivation);
             }
