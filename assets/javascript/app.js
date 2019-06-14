@@ -36,7 +36,7 @@ $('#submitBtn').on('click', function(event) {
 
                 console.log($('#category-div').append(divContainer));
 
-                trans(motivation)
+                trans(motivation);
             }
         }
     });
