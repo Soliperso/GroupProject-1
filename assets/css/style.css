@@ -1,4 +1,4 @@
-html {
+ html {
     font-family: 'Ubuntu', sans-serif;
     background-color: whitesmoke;
 }
@@ -10,7 +10,7 @@ body {
     background-color: whitesmoke;
 }
 
-main {
+/* main {
     flex: 1 0 auto;
 }
 
@@ -32,4 +32,4 @@ h1 {
 .back-button {
     margin-top: 40px;
     margin-left: 40px;
-}
+} */

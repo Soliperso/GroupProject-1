@@ -1,46 +1,64 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <!-- Javascript -->
-    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+
+
 </head>
 
 <body>
+    <!-- Banner -->
+    <!-- Banner Script -->
     <header>
-        <div>
-            <!-- Carousel -->
-            <div class="carousel">
-                <a class="carousel-item" href="#one!"><img src="./assets/images/CamiloCela1989.jpg" alt="Camilo Cela, 1989"></a>
-                <a class="carousel-item" href="#two!"><img src="./assets/images/CarlosBelo96.jpg" alt="Carlos Belo, 1996"></a>
-                <a class="carousel-item" href="#three!"><img src="./assets/images/DaliLama14_1989.jpg" alt="Dali Lama, 1989"></a>
-                <a class="carousel-item" href="#four!"><img src="./assets/images/JodyWilliams97.jpg" alt="Jody Williams, 1997"></a>
-                <a class="carousel-item" href="#five!"><img src="./assets/images/JosephRatbalt95.jpg" alt="Joseph Ratbalt, 1995"></a>
-                <a class="carousel-item" href="#six!"><img src="./assets/images/Mikhail.Gorbachev.jpg" alt="Mikhail Gorbachev, 1990"></a>
-                <a class="carousel-item" href="#seven!"><img src="./assets/images/RichardErnst91.jpg" alt="Richard Ernst, 1991"></a>
-                <a class="carousel-item" href="#eight!"><img src="./assets/images/RudolphMarcus92.jpg" alt="Rudolph Marcus, 1992"></a>
-                <a class="carousel-item" href="#nine!"><img src="./assets/images/YaserArafat94.jpg" alt="Yaser Arafat, 1994"></a>
-            </div>
+        <script>
+            $(document).ready(function () {
+                $('.carousel').carousel({
+                    padding: 300
+                });
+
+            });
+
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 2000);
+            }
+            setTimeout(autoplay, 2000);
+        </script>
+
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="./assets/images/CamiloCela1989.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="./assets/images/CarlosBelo96.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="./assets/images/DaliLama14_1989.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="./assets/images/JodyWilliams97.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="./assets/images/JosephRatbalt95.jpg"></a>
+            <a class="carousel-item" href="#six!"><img src="./assets/images/Mikhail.Gorbachev.jpg"></a>
+            <a class="carousel-item" href="#seven!"><img src="./assets/images/RichardErnst91.jpg"></a>
+            <a class="carousel-item" href="#eight!"><img src="./assets/images/RudolphMarcus92.jpg"></a>
+            <a class="carousel-item" href="#nine!"><img src="./assets/images/YaserArafat94.jpg"></a>
         </div>
-        <!-- Header -->
         <div>
+            <!-- Header -->
             <h1 class="center-align">Nobel Prize Winners</h1>
         </div>
     </header>
@@ -50,96 +68,97 @@
                 <!-- Left Aside (contains ) -->
                 <section class="section container" id="form-aside">
                     <div class="row">
-                        <div class="col m6">
+                        <div class="col-lg-8">
                             <h2 class="section-title">How to use this app</h2>
-                            <p>
-                                The Nobel Prize is one of the most distinguished endowments a person could be given. Laureates represent some of the most astute minds in the world, and their unrivaled contributions to society are a trademark of their tenacity and steadfastness.
-                            </p>
-                            <p>
-                                First awareded in 1901, with nearly 1000 recipients spanning 75 different countries, one could speculate contributions have been nearly as diverse as the number of ethnic origins. The true value this app gleams by facilitating the ability to search for
-                                laureates by way of: country of origin, year the prize was awarded, or field of study.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias unde facere a maiores
+                                omnis quos corporis sunt eaque maxime sapiente reiciendis neque id repellat atque,
+                                officia exercitationem asperiores sequi?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odio aut adipisci illo
+                                velit repellat perferendis eaque voluptatum, officiis numquam molestiae, non voluptates
+                                sed fugiat dignissimos doloribus provident! Optio,
+                                temporibus?
                             </p>
                         </div>
-                        <div class="col m5 offset-1">
-                            <!-- Form begins -->
-                            <h2 class="section-title">Search laureates</h2>
-                            <div class="row">
-                                <div class="col s12">
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">date_range</i>
-                                            <input type="text" id="year">
-                                            <label>Enter start year</label>
-                                        </div>
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">date_range</i>
-                                            <input type="text" id="yearTo">
-                                            <label>Enter end year</label>
-                                        </div>
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">school</i>
-                                            <input type="text" id="category">
-                                            <label>Enter category</label>
-                                        </div>
+                        <!-- <div class="col m5 offset-1"> -->
+                            <!-- Form -->
+
+                            <div class="col-lg-4">
+                                <div class="card form">
+                                    <div class="card-header">
+                                        <h4 class="form-header">Search Terms</h4>
                                     </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="year">Year</label>
+                                                <input type="text" class="form-control" id="year">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="yearTo">YearTo</label>
+                                                <input type="text" class="form-control" id="yearTo">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="category">Category</label>
+                                                <input type="text" class="form-control" id="category">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="numberOfLaureates">Number of Laureates</label>
+                                                <select class="custom-select" id="numberOfLaureates">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-outline-default btn-md"id="submitBtn">Submit</button>
                                 </div>
                             </div>
-                            <!-- <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="card-body personInfoDisplay">
-                                            <div id='category-div'></div>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <p id="para"></p>
-                                    </div>
-                                </div>
-                            </div> -->
+                            
 
 
-
-
-                            <!-- Form ends -->
-                            <!-- Right Aside (Search) -->
-                            <div class="form-group">
-                                <label for="numberOfLaureates">Number of Laureates</label>
-                                <select class="custom-select" id="numberOfLaureates">
-                                    <option selected>Choose...</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                            <a class="waves-effect waves-light btn text-white" id="submitBtn"><i class="material-icons left">search</i>Search</a>
+                            <!-- Dropdown Ends -->
+                        </div>
+                        <!-- Right Aside (Search) -->
                 </section>
-                </div>
+
+            </div>
+            <section class="section-container" id="about-aside">
+
+
+            </section>
         </container>
     </main>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card-body personInfoDisplay">
+                    <div id='category-div'></div>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Text to be translated -->
+                <p id="para"></p>
+                <!-- <p id="para"></p> -->
+            </div>
+        </div>
+    </div>
     <footer class="page-footer teal">
         <div class="footer-copyright teal">
             <div class="center-align container">
-                © 2019
+                © 2019 UC Berkeley Extension Bootcamp
             </div>
         </div>
     </footer>
-    <script>
-        $(document).ready(function() {
-            $('.carousel').carousel();
-        });
-        $(document).ready(function() {
-            $('.carousel').carousel({
-                padding: 300
-            });
-        });
+    <script src="https://code.jquery.com/jquery-3.4.1.js"integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
 
-        function autoplay() {
-            $('.carousel').carousel('next');
-            setTimeout(autoplay, 3000);
-        }
-        setTimeout(autoplay, 3000);
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
